@@ -1,0 +1,338 @@
+insercção css no html
+1- CSS INLINE :<tag style="" /> -- dois atributos em uma tag:
+ <tag style="color: red;font-size: 30px" />
+
+2- CSS INTERNO:
+    <head>
+        <meta charset="UTF-8" />
+        <title>Oi</title>
+        <style>
+            h1 { 
+                color: blue; 
+                font-size: 15px;
+            }
+            a {
+                color: green;
+            }
+        </style>
+    </head>
+
+3- CSS EXTERNO: coloca-se em um arquivo externo lincado no head 
+<head>
+    <meta charset="UTF-8" />
+    <title>Oi</title>
+    <link rel="stylesheet" href="estilo.css"/>
+</head>
+
+Para chamar um id no css ultiliza "#" ex:
+<body>
+    <h1 id="titulo">Titulo maroto</h1>
+</body>
+<style>
+    #titulo {
+        color: red;
+    }
+</style>
+
+Para chamar uma class no css ultiliza "." ex:
+<body>
+    <p class="texto">Era uma vez bla bla bla...</p>
+</body>
+<style>
+    .texto {
+        color: red;
+    }
+</style>
+
+Margin e padding
+
+Margin espaçamento externo
+padding espaçamentointerno
+
+tag img <img src="https://www.google.com.br/google.jpg" alt=""/>
+
+LINK --- 
+
+<a href=""(link da página) target="_blank"(lançar a outra aba) title="">Conteúdo</a>
+
+FORMATAÇÃO DE TEXTO
+
+tags: <b></b> ou <strong></strong> -- Negrito
+      <i></i> ou <em></em> -- itálico
+      <small></small> -- Coloca as letras menores pouco destaque.
+      <del></del> -- da um risco na palavra.
+      <mark></mark> -- um marca texto.
+      <sup></sup> -- eleva as letras
+      <sub></sub> -- contrário de sup.
+
+COMENTÁRIO
+
+<!-- ESTA É A TAG PARA SE USAR COMENTÁRIOS EM HTML-->
+
+
+FORMATAÇÃO PARTE 2 PELO css
+
+ex:
+<style>
+    p {
+        color: #0000ff;
+        font-size: 30px;
+        font-weight: bold; (ESTA PROPRIEDADE COLOCA EM NEGRITO)
+        font-family: Arial; (troca a fonte do texto).texto
+        text-align: center ;
+        text-decoration: none;
+        word-spacing:; (espaço entre palavras)
+        line-height: 40px; (espaçamento entre linhas tipo paragrafo)
+        text-shadow: 0px 2px 3px #ff0000; (sombra nas palavras.)
+
+    }
+</style>
+
+<!--TIPOS DE LISTAS:
+ul é a lista desordenada sem numeros.-->
+<body>
+    <ul>
+        <li></li>
+    </ul>
+</body>
+<body style="list-style-type: ;"> (square= quadradinhso, circle, personalizações )
+    <ul>
+        <li></li>
+    </ul>
+</body>
+<!--ol é uma lista ordenada.-->
+<body>
+    <ol>
+        <li></li>
+    </ol>
+</body>
+
+<!--TABELAS -->
+<table border="1">
+    <thead>
+        <tr>        <!--cabeçalho da tabela-->
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<!--TIPOS DE INPUT-->
+
+<input type="text"/>
+<input type="password"/>
+<input type="checkbox"/>
+<input type="radio"/>
+<input type="submit"/>
+<input type="email"/>
+
+<input type="text" name="usuario"/>
+<input type="submit" value="Fazer cadastro"/> <!--value altera o texto-->
+
+<input type="color"/>
+<input type="date"/>
+<input type="datetime"/>
+<input type="month"/>
+<input type="number"/>
+<input type="range"/>
+<input type="search"/>
+<input type="tel"/>
+<input type="time"/>
+<input type="url"/>
+<input type="week"/>
+
+<textarea></textarea> <!--CAMPO DE TEXTO-->
+
+<!--TEXT AREA--> Campo de texto
+
+<textarea name="descricao"></textarea>
+
+<!--BOTÃO-->
+
+<button>texto</button>
+
+<!-- label-->
+
+<form>
+    <label>
+        Nome Completo:<br/>
+        <input type="text" name="nome"/>
+    </label>
+
+    <br/><br/>
+
+    <input type="checkbox" id="teste" />
+    
+</form>
+
+<!--FORMATAÇÃO DE FORMULARIOS-->
+
+<style>
+    input {
+        outline: 0; (atributo que remove a borda azul de seleção de um formulário)
+    }
+</style>
+
+
+<!--TAGS FIELDSET E LEGEND--> TAGAS PARA FORMULÁRIOS 
+SEPARAÇÃO DE FORMULÁRIOS.
+<fieldset>
+        <legend>Dados pessoais</legend>
+        <label>
+            Primeiro nome<br/>
+            <input type="text" name="nome" />
+        </label></br>
+        <label>
+            Sobrenome<br/>
+            <input type="text" name="Lastnome" />
+        </label></br>
+    </fieldset>
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+        <label>
+            Nome da empresa<br/>
+            <input type="text" name="companyname" />
+        </label></br>
+        <label>
+            Cargo na empresa<br/>
+            <input type="text" name="companyjobtitle" />
+        </label></br>
+    </fieldset>
+    <input type="submit" value="Cadastrar" />
+
+
+
+
+
+
+
+    VALIDAÇÕES EM CAMPOS
+
+    torna os inputs em campops obrigatorios.
+    Ex:
+    Primeiro nome </br>
+    <input type="text" name="nome" required />
+
+
+    <input type="text" name="nome" required  />
+
+    
+    <input type="text" name="nome" required  minlength="2"/>
+    <!--minlenght é o minimo de caracteres exigidos para validação-->
+
+<!--INPUT TIPO FILE-->
+<label>
+        Arquivo:</br>
+    <input type="file" name="arquivo"/>
+</label>
+
+<input type="file" name="arquivo" accept="image/*"/> só aceita imagens
+
+
+<input type="file" name="arquivo" accept="application/pdf"/>
+
+
+<!-- Unidade de medida-->
+
+em = é uma medida baseada no font-size de 
+    um elemento especifico e ele é sempre baseado
+    no font-size do item pai.
+
+rem = root em vai ainda mais atás pega os
+    os atributos da primeira tag.    
+Ex: 
+
+<style>
+    .box {
+        font-size: 20px;
+    }
+    .box-interno {
+        width: 10em; (Neste caso 1em = 20px e 10em = 200px)
+        height: 10em;
+        background-color: #999;
+    }
+</style>
+
+<!-- VW E VH-->
+100vw = significa 100% largura da tela do
+100vh = 100% da altura. 
+<style>
+    .box {
+        background-color: #ccc;
+        width: 100vw;
+    }
+</style>
+
+<!-- inherit -->
+Herança de PROPRIEDADE
+
+
+mor vs efólios.
+
+<!--RESPONSIVIDADE-->
+
+
+<!-- Descrição-->
+
+<dl>
+    <dt>Café</dt>
+    <dd>Liquido quente preto</dd>
+    <dt>Leite</dt>
+    <dd>Liquido frio branco</dd>
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

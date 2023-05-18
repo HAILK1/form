@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Lobster+Two&display=swap');
+* {
+    font-family: 'Holtwood One SC', serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.background {
+    background-image: url('estabulo.jpg');
+    background-size: cover;
+    height: 96vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_area {
+    width: 800px;
+    height: 500px;
+    background-color: rgba(196, 116, 25, 0.5);
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 3px 3px #000;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    background-color: #ff8a3c80;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.input {
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+input {
+    padding: 5px;
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+}
+select {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: #ffaf79;
+}
+.botao {
+    align-self: center;
+}
+button {
+    background-color: #9e4001;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffd5ba;
+    box-shadow: inset 0px 0px 5px 5px #000;
+    transition: all 0.5s ease;
+}
+button:hover {
+    background-color: #ffd2b4;
+    color: #9e4001;
+    box-shadow: none;
+}
+::placeholder {
+    color: #ffaf79;
+}
+.text {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 3px 3px 5px #ff8138;
+}
+.pic img {
+    width: 90%;
+}
+footer {
+    color: #ffac7b;
+    text-shadow: #fff;
+    width: 100%;
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .form_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .pic img {
+        display: none;
+    }
+    .form {
+        width: 10px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    .background {
+        height: 100%;
+        width: 100%;
+    }
+}
+@media (max-width:700px) {
+    .background {
+        height: 100%;
+        width: 100%;
+    }
+}
